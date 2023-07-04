@@ -1,5 +1,5 @@
 import React from 'react';
-import RenderCalculator from './functions/RenderCalculator';
+import RenderCalculator from './functions/RenderCalculator.js';
 
 const Calculator = () => (
   <div className="grid">
