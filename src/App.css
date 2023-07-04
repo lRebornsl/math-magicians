@@ -1,39 +1,64 @@
-.App {
-  text-align: center;
+:root {
+  --romanSilver: #858693;
+  --lightSilver: #d7d7d7;
+  --chineseWhite: #e0e0e0;
+  --royalOrange: #f5913e;
 }
 
-.App-logo {
-  height: 40vmin;
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--chineseWhite);
+}
+
+.form {
+  grid-column: 1/5;
+  background-color: var(--romanSilver);
+  border: 0.1rem var(--lightSilver) solid;
+  padding: 2rem 1rem;
+}
+
+.number {
+  width: 100%;
+  font-size: 2rem;
+  background-color: var(--romanSilver);
+  border: none;
+  color: white;
+  text-align: end;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calcItem {
+  text-align: center;
+  border: 0.1rem var(--lightSilver) solid;
+  padding: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.calcItem:hover {
+  cursor: pointer;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.itemOperation {
+  background-color: var(--royalOrange);
+}
+
+.itemZero {
+  grid-column: 1/3;
 }
