@@ -1,6 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line
-import RenderCalculator from './functions/RenderCalculator';
+import RenderCalculator from './functions/renderCalculator';
 
 const Calculator = () => (
   <div className="grid">
