@@ -51,6 +51,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show a clean calculator**
+- **Do math operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +83,7 @@ Install this project with:
 Example command:
 
 ```sh
- npx create-react-app .
+ npm install
 ```
 
 ### Usage
@@ -124,7 +125,7 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Make a better UI.**
-- [ ] **Do math operations.**
+- [ ] **Build new sections.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
