@@ -50,7 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Do math operations.**
+- **Show a clean calculator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
