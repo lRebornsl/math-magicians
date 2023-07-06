@@ -52,6 +52,7 @@
 
 - **Show a clean calculator**
 - **Do math operations**
+- **Show you a quote from an API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
