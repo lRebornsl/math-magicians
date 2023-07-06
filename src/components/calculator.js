@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// eslint-disable-next-line
 import RenderCalculator from './functions/renderCalculator';
 
 const Calculator = () => {
