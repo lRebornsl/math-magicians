@@ -50,10 +50,16 @@ body {
 .calcItem {
   text-align: center;
   border: 0.1rem var(--lightSilver) solid;
-  padding: 2rem 0;
 }
 
-.calcItem:hover {
+.calcItem button {
+  padding: 2rem 0;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.calcItem:hover button {
   cursor: pointer;
 }
 
