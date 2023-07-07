@@ -9,42 +9,41 @@ const Quote = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const quote = await axios.get(url, {
+      setLoaded(true);
+      await axios.get(url, {
         headers: { 'X-Api-Key': '0/oKKV8YUUh7h5bLfAzX0g==AiN9WmbJgj4beaWU' },
       })
-        .catch((error) => {
+        .then((response) => {
+          const [qData] = response.data;
+          setData(qData);
+        })
+        .catch(() => {
           setError(true);
-          if (error.response) {
-            const errorArray = { data: [{ quote: 'We learn from mistakes', author: 'lRebornsl', category: '' }] };
-            return errorArray;
-          }
-          return null;
         });
 
-      setData(quote.data[0]);
+      setLoaded(false);
     };
 
-    if (!loaded) {
-      setLoaded(true);
-      getData();
-    }
-  }, [loaded]);
-
-  if (error) {
-    return (
-      <div className="quote">
-        <h3>We learn from mistakes -lRebornsl</h3>
-      </div>
-    );
-  }
+    getData();
+  }, [setLoaded, setData]);
 
   return (
     <div className="quote">
-      <h3>
-        {data.quote}
-        {' -'}
-        {data.author}
-      </h3>
+      {loaded && (
+        <figure className="quote">Loading...</figure>
+      )}
+      {error && (
+        <div className="quote">
+          <h3>We learn from mistakes -lRebornsl</h3>
+        </div>
+      )}
+      {!loaded && !error && (
+        <h3>
+          {data.quote}
+          {' -'}
+          {data.author}
+        </h3>
+      )}
     </div>
   );
 };
