@@ -30,12 +30,10 @@ const Quote = () => {
   return (
     <div className="quote">
       {loaded && (
-        <figure className="quote">Loading...</figure>
+        <h3>Loading...</h3>
       )}
       {error && (
-        <div className="quote">
-          <h3>We learn from mistakes -lRebornsl</h3>
-        </div>
+        <h3>We learn from mistakes -lRebornsl</h3>
       )}
       {!loaded && !error && (
         <h3>
