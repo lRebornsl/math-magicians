@@ -28,7 +28,7 @@ const Quote = () => {
   }, [setLoaded, setData]);
 
   return (
-    <div className="quote">
+    <div className="container quote flex">
       {loaded && (
         <h3>Loading...</h3>
       )}

@@ -11,7 +11,7 @@ const RenderCalculator = ({ data, setData }) => {
 
   return (
     calcData.map((item) => (
-      <div key={item} className={`calcItem ${item === '0' ? 'itemZero' : ''} ${item === '÷' || item === 'x' || item === '-' || item === '+' || item === '=' ? 'itemOperation' : ''}`}>
+      <div key={item} className={`flex calcItem ${item === '0' ? 'itemZero' : ''} ${item === '÷' || item === 'x' || item === '-' || item === '+' || item === '=' ? 'itemOperation' : ''}`}>
         <button type="button" onClick={() => updateData(item)}>
           {item}
         </button>
