@@ -3,8 +3,10 @@
   --lightSilver: #d7d7d7;
   --chineseWhite: #e0e0e0;
   --royalOrange: #f5913e;
+  --blue: #5183b2;
 }
 
+/* Global */
 html {
   font-size: 62.5%;
 }
@@ -16,14 +18,70 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--blue);
+  font-size: 1.8rem;
+}
+
+hr {
+  border: solid black 0.1rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+/* Utility */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: var(--chineseWhite);
-  width: 50%;
-  margin: 2rem auto;
+  width: 65%;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Navbar */
+.navbar {
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.navItem {
+  padding: 1.6rem;
+}
+
+.line {
+  margin: 1.4rem 0;
+}
+
+/* Home */
+.homeTitle {
+  padding: 3rem 0;
+}
+
+.paragraph {
+  padding: 1.8rem 0;
+}
+
+/* Calculator */
+.calculatorPage {
+  justify-content: space-between;
+  padding-top: 4rem;
 }
 
 .form {
@@ -71,8 +129,13 @@ body {
   grid-column: 1/3;
 }
 
+/* Quote */
 .quote {
-  width: 50%;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   margin: 2rem auto;
+  font-size: 2rem;
   line-height: 3rem;
 }
