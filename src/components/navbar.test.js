@@ -49,4 +49,24 @@ describe('Test Navigation Bar', () => {
 
     })
 
+    test('Click on "Home" should display Home Page', () => {
+        render(
+            <BrowserRouter>
+                <div className="App">
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="home" element={<Home />} />
+                        <Route path="calculator" element={<Calculator />} />
+                        <Route path="quote" element={<Quote />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
+        )
+
+        userEvent.click(screen.getByText('Home'))
+
+        expect(screen.getByText('Welcome to our page!')).toBeInTheDocument()
+    })
+
 })
