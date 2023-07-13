@@ -13,4 +13,14 @@ describe('Test Calculator Page', () => {
 
     })
 
+    test('Calculator shoud have a button AC', () => {
+        render(<Calculator />)
+        expect(screen.getByText('Let‘s do some math!')).toBeInTheDocument()
+    })
+
+    test('Calculator shoud have a button +', () => {
+        render(<Calculator />)
+        expect(screen.getByText('+')).toBeInTheDocument()
+    })
+
 })
