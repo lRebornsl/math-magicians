@@ -25,4 +25,28 @@ describe('Test Navigation Bar', () => {
         expect(screen.getByText('Quote')).toBeInTheDocument()
     })
 
+    test('Click on "Calculator" should Display Calculator Page', () => {
+        render(
+            <BrowserRouter>
+                <div className="App">
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="calculator" element={<Calculator />} />
+                        <Route path="quote" element={<Quote />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
+        )
+        userEvent.click(screen.getByText('Calculator'))
+
+        expect(screen.getByText('AC')).toBeInTheDocument()
+        expect(screen.getByText('+')).toBeInTheDocument()
+        expect(screen.getByText('-')).toBeInTheDocument()
+        expect(screen.getByText('=')).toBeInTheDocument()
+        expect(screen.getByText('x')).toBeInTheDocument()
+        expect(screen.getByText('÷')).toBeInTheDocument()
+
+    })
+
 })
