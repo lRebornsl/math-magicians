@@ -12,3 +12,17 @@ import Home from "./home"
 import Quote from "./functions/quotes"
 
 
+describe('Test Navigation Bar', () => {
+    test("Navigation should include Home, Calculator and Quote", () => {
+        render(
+            <BrowserRouter>
+                <Navbar />
+            </BrowserRouter>
+        )
+
+        expect(screen.getByText('Home')).toBeInTheDocument()
+        expect(screen.getByText('Calculator')).toBeInTheDocument()
+        expect(screen.getByText('Quote')).toBeInTheDocument()
+    })
+
+})
