@@ -23,4 +23,23 @@ describe('Test Calculator Page', () => {
         expect(screen.getByText('+')).toBeInTheDocument()
     })
 
+    test('Calculator shoud have a button -', () => {
+        render(<Calculator />)
+        expect(screen.getByText('-')).toBeInTheDocument()
+    })
+
+    test('Calculator shoud have a button =', () => {
+        render(<Calculator />)
+        expect(screen.getByText('=')).toBeInTheDocument()
+    })
+
+    test('Calculator shoud have a button x', () => {
+        render(<Calculator />)
+        expect(screen.getByText('x')).toBeInTheDocument()
+    })
+
+    test('Calculator shoud have a button ÷', () => {
+        render(<Calculator />)
+        expect(screen.getByText('÷')).toBeInTheDocument()
+    })
 })
