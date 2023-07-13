@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderCalculator renders correctly 1`] = `
+<div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      AC
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      +/-
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      %
+    </button>
+  </div>
+  <div
+    class="flex calcItem  itemOperation"
+  >
+    <button
+      type="button"
+    >
+      ÷
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      7
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      8
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      9
+    </button>
+  </div>
+  <div
+    class="flex calcItem  itemOperation"
+  >
+    <button
+      type="button"
+    >
+      x
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      4
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      5
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      6
+    </button>
+  </div>
+  <div
+    class="flex calcItem  itemOperation"
+  >
+    <button
+      type="button"
+    >
+      -
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      1
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      2
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      3
+    </button>
+  </div>
+  <div
+    class="flex calcItem  itemOperation"
+  >
+    <button
+      type="button"
+    >
+      +
+    </button>
+  </div>
+  <div
+    class="flex calcItem itemZero "
+  >
+    <button
+      type="button"
+    >
+      0
+    </button>
+  </div>
+  <div
+    class="flex calcItem  "
+  >
+    <button
+      type="button"
+    >
+      .
+    </button>
+  </div>
+  <div
+    class="flex calcItem  itemOperation"
+  >
+    <button
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
