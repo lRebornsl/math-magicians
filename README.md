@@ -119,6 +119,10 @@ Example command:
 - Twitter: [@RebornsDev](https://twitter.com/RebornsDev)
 - LinkedIn: [Anthony Vásquez](https://www.linkedin.com/in/avvm98/)
 
+👤 **Diego Vidal**
+
+- GitHub: [@lRebornsl](https://github.com/Diegogagan2587)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

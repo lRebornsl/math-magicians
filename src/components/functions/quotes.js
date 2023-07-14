@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { act } from '@testing-library/react';
 import axios from 'axios';
 
 const Quote = () => {
@@ -15,13 +16,17 @@ const Quote = () => {
       })
         .then((response) => {
           const [qData] = response.data;
-          setData(qData);
+          act(() => {
+            setData(qData);
+          });
         })
         .catch(() => {
           setError(true);
         });
 
-      setLoaded(false);
+      act(() => {
+        setLoaded(false);
+      });
     };
 
     getData();
